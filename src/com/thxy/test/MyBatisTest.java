@@ -14,7 +14,7 @@ public class MyBatisTest {
 	public DataConnection dataConn=new DataConnection();
 	
 	@Test
-	public void Select() throws IOException {
+	public void Select() throws IOException,InterruptedException {
 		SqlSession sqlSession=dataConn.getSqlSession();
 		
 		UserMapper mapper=sqlSession.getMapper(UserMapper.class);
